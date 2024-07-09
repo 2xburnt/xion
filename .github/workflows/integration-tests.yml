@@ -83,6 +83,7 @@ jobs:
         - "XionAbstractAccountJWTCLI"
         - "TreasuryContract"
         - "Simulate"
+        - "SingleAbstractAccountMigration"
 
     steps:
       - name: Set up Go 1.21
