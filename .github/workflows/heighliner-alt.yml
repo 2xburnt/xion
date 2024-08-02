@@ -43,7 +43,7 @@ jobs:
 
       - name: Build Heighliner image
         id: heighliner
-        uses: burnt-labs/heighliner-action@v1.0.0-alpha10
+        uses: 2xburnt/heighliner-action@v1.0.0-alpha10
         with:
           local: true
           tag: ${{ steps.meta-heighliner.outputs.tags }}
@@ -55,4 +55,4 @@ jobs:
 
       - name: Push Heighliner image
         run: |
-          docker push ghcr.io/burnt-labs/xion/${{ steps.heighliner.outputs.tag }}
+          docker push ghcr.io/2xburnt/xion/${{ steps.heighliner.outputs.tag }}

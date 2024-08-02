@@ -10,11 +10,11 @@ env:
 jobs:
   build-docker:
     name: Build and Push Docker Images
-    uses: burnt-labs/xion/.github/workflows/docker-build.yml@wf1
+    uses: 2xburnt/xion/.github/workflows/docker-build.yml@wf1
     secrets: inherit
 
   build-heighliner:
     needs: build-docker
     name: Heighliner Build
-    uses: burnt-labs/xion/.github/workflows/heighliner.yml@wf1
+    uses: 2xburnt/xion/.github/workflows/heighliner.yml@wf1
     secrets: inherit

@@ -44,7 +44,7 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            ghcr.io/burnt-labs/xion/heighliner
+            ghcr.io/2xburnt/xion/heighliner
           tags: |
             type=sha
 
